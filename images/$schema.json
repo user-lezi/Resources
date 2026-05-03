@@ -1,24 +1,61 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "array",
-  "description": "List of image resource objects",
-  "items": {
-    "type": "object",
-    "required": ["file", "title", "description"],
-    "properties": {
-      "file": {
-        "type": "string",
-        "description": "Image file path"
-      },
-      "title": {
-        "type": "string",
-        "description": "Suitable title for the image"
-      },
-      "description": {
-        "type": "string",
-        "description": "Short description of the image"
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["file", "title", "description", "size", "dominatecolor"],
+        "properties": {
+          "file": {
+            "type": "string",
+            "description": "Path to the image file"
+          },
+          "title": {
+            "type": "string",
+            "description": "Suitable title for the image"
+          },
+          "description": {
+            "type": "string",
+            "description": "Short description of the image"
+          },
+          "size": {
+            "type": "object",
+            "properties": {
+              "bytes": {
+                "type": "number",
+                "minimum": 0,
+                "description": "File size in bytes"
+              },
+              "width": {
+                "type": "number",
+                "minimum": 0,
+                "description": "Image width in pixels"
+              },
+              "height": {
+                "type": "number",
+                "minimum": 0,
+                "description": "Image height in pixels"
+              }
+            },
+            "required": ["bytes", "width", "height"],
+            "additionalProperties": false
+          },
+          "dominatecolor": {
+            "type": "array",
+            "description": "Top 3 dominant color integers (not RGB)",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "additionalProperties": false
       }
-    },
-    "additionalProperties": false
-  }
+    }
+  },
+  "additionalProperties": false
 }

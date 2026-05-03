@@ -1,1 +1,65 @@
-[]
+{
+  "$schema": "https://raw.githubusercontent.com/user-lezi/Resources/refs/heads/main/images/$schema.json",
+  "data": [
+    {
+      "file": "images/images/cristiano-ronaldo-manunited-2008.jpeg",
+      "title": "Cristiano Ronaldo Manchester United 2008",
+      "description": "Cristiano Ronaldo playing for Manchester United in 2008",
+      "dominantcolor": [
+        6316128,
+        6307904,
+        4210752
+      ],
+      "size": {
+        "bytes": 66956,
+        "width": 864,
+        "height": 1079
+      }
+    },
+    {
+      "file": "images/images/cristiano-ronaldo-portugal.jpeg",
+      "title": "Cristiano Ronaldo Portugal",
+      "description": "Cristiano Ronaldo playing for Portugal",
+      "dominantcolor": [
+        16448,
+        14737632,
+        24672
+      ],
+      "size": {
+        "bytes": 28324,
+        "width": 553,
+        "height": 555
+      }
+    },
+    {
+      "file": "images/images/lionel-messi-argentina.webp",
+      "title": "Lionel Messi Argentina",
+      "description": "Lionel Messi representing Argentina",
+      "dominantcolor": [
+        0,
+        14737632,
+        2105376
+      ],
+      "size": {
+        "bytes": 21184,
+        "width": 500,
+        "height": 500
+      }
+    },
+    {
+      "file": "images/images/lionel-messi-barca.jpg",
+      "title": "Lionel Messi Barcelona",
+      "description": "Lionel Messi playing for FC Barcelona",
+      "dominantcolor": [
+        4210752,
+        2105376,
+        4202528
+      ],
+      "size": {
+        "bytes": 365121,
+        "width": 1600,
+        "height": 1600
+      }
+    }
+  ]
+}
