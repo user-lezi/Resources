@@ -5,4 +5,4 @@ This folder contains all the resources used in my projects.
 
 ## [1] Images
 
-All the images related resources are stored in "**[Images](./Images/README.md)**" folder.
+All the images related resources are stored in "**[Images](./images/README.md)**" folder.
