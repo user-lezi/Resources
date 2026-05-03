@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "description": "List of image resource objects",
+  "items": {
+    "type": "object",
+    "required": ["file", "title", "description"],
+    "properties": {
+      "file": {
+        "type": "string",
+        "description": "Image file path"
+      },
+      "title": {
+        "type": "string",
+        "description": "Suitable title for the image"
+      },
+      "description": {
+        "type": "string",
+        "description": "Short description of the image"
+      }
+    },
+    "additionalProperties": false
+  }
+}
